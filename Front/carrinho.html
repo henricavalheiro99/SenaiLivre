@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/mobile.css">
+    <title>carrinho</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerlogin">
+            <div class="img">
+                <img src="../img/senai.png" alt="Logo">
+            </div>
+          
+            <div class="hamblogin">
+                <div class="button-borders">
+                    <a href="cabecalho.html"><button class="primary-button">Sair</button></a>
+                  </div>
+                <svg viewBox="0 0 100 80" width="20" height="20">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                  </svg>
+            </div>
+        
+        </div>
+    </header>
+
+    <main id="background">
+        <div id="cima">
+            <div class="apresenta">
+                <img class="icon-carrinho" src="../img/cart-plus-solid.svg" alt="carrinho">
+
+                <h1>Carrinho de compras</h1>
+            </div>
+
+            <div class="esvaziar">
+                <button type="reset" class="esvaziar-botao">Esvaziar carrinho</button>
+            </div>
+        </div>
+
+        <div id="tabela">
+            <table border="3">
+                <tr>
+                    <td></td>
+                    <td class="azul">Quantidade</td>
+                    <td class="azul">Preço</td>
+                    <td class="azul">Subtotal</td>
+                </tr>
+
+                <tr>
+                    <td><button type="submit" class="tabela-botao">Adicionar produtos</button></td>
+                    <td class="preto"><b>- 0 +</b></td>
+                    <td class="preto"><b>----</b></td>
+                    <td class="preto"><b>----</b></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="cupons-pagamento">
+            <div class="cupons">
+                <h2>Cupons de descontos</h2>
+                <textarea name="caixa" class="cupons-texto" cols="10" rows="1" placeholder="insira o cupom aqui"></textarea>
+                <button type="submit" class="cupons-botao">Adicionar</button>
+
+            </div>
+
+            <div class="pagamento">
+                <h2>Formas de pagamento</h2>
+
+                <div class="grid-itens">
+
+                    <div class="grid-row">
+                        <div class="CC">
+                            <label class="container1">
+                                <input  type="checkbox">
+                                <div class="checkmark"></div>
+                              </label>
+                                    <b>Cartão de crédito</b>
+                           
+                        </div>
+
+                        <div class="CD">
+                            <label class="container1">
+                                <input type="checkbox">
+                                <div class="checkmark"></div>
+                            </label>
+                                <b>Cartão de débito</b>
+                           
+                        </div>
+                    </div>
+
+                    <div class="grid-row">
+                        <div class="Pix">
+                            <label class="container1">
+                                <input  type="checkbox">
+                                <div class="checkmark"></div>
+                            </label>
+                                <b class="pixtxt">Pix</b>
+                               
+                        </div>
+                       
+
+                        <div class="BB">
+                            <label class="container1">
+                                <input  type="checkbox">
+                                <div class="checkmark"></div>
+                            </label>  
+                                    <b>Boleto bancário</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>    
+       
+
+        <div id="baixo">
+            <button type="submit" class="baixo-botao">Confirmar compra</button>
+        </div>
+
+
+    </main>
+    
+</body>
+
+</html>

@@ -1,0 +1,1193 @@
+:root {
+    --cor-header: #FFF159;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all 0.8s;
+}
+
+.topo {
+    background-color: var(--cor-header);
+}
+
+.topo nav a{
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+
+.hc{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.topo nav a:hover{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 20px;
+    font-weight: 700px;
+
+}
+
+.primary-button a{
+    text-decoration: none;
+    color: black;
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: black;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+
+  .primary-button,
+  .primary-button2{
+    font-family: 'Ropa Sans', sans-serif;
+       /* font-family: 'Valorant', sans-serif; */
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    padding: 0.8rem 2.1rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-color: var(--cor-header);
+    background-size: 200%;
+    background-position: 200%;
+    background-repeat: no-repeat;
+    transition: 0.6s ease-in-out;
+    transition-property: background-position, border, color;
+    position: relative;
+    z-index: 1;
+    border: none;
+    color: black;
+   }
+   
+   .primary-button:hover,
+   .primary-button2:hover {
+    border: 1px solid #ff4655;
+    color: white;
+    background-position: 40%;
+   }
+
+   .primary-button a:hover{
+    color: white;
+   }
+   
+   .primary-button:before,
+   .primary-button2:before {
+    content: "";
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    top: -1px;
+    left: -1px;
+    transition: background-color 0.15s ease-in-out;
+   }
+   
+   .primary-button:hover:before,
+   .primary-button2:hover:before{
+    background-color: white;
+   }
+   
+   .primary-button:hover:after,
+   .primary-button2:hover:after{
+    background-color: white;
+   }
+   
+   .primary-button:after,
+   .primary-button2:after{
+    content: "";
+    position: absolute;
+    background-color: #ff4655;
+    width: 0.3rem;
+    height: 0.3rem;
+    bottom: -1px;
+    right: -1px;
+    transition: background-color 0.15s ease-in-out;
+   }
+   
+   .button-borders,
+   .button-borders2 {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+   }
+   
+   .button-borders:before,
+   .button-borders2:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: 50%;
+    left: -0.3em;
+    top: -0.3em;
+    border-bottom: 0px;
+       /* opacity: 0.3; */
+   }
+   
+   .button-borders:after,
+   .button-borders2:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: 50%;
+    left: -0.3em;
+    bottom: -0.3em;
+    border-top: 0px;
+       /* opacity: 0.3; */
+    z-index: 0;
+   }
+   
+   .shape {
+    fill: #0E1822;
+   }
+   
+   .hc,
+   .btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   .logo{
+    width: 100%;
+    height: 25vh;
+   }
+
+   .btns {
+    gap: 20px;
+   }
+
+   
+
+   .maior {
+    background-color: var(--cor-header);
+    height: 50px;
+    text-align: center;
+    transition: height 0.5s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.032);
+   }
+
+   .maior .D {
+    font-size: 36px;
+
+   }
+
+   .hb {
+    height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    transition-delay: -0.2s;
+   }
+
+   .hb a,
+   .confirab a {
+    text-decoration: none;
+    color: black;
+   }
+
+   .maior:hover {
+        height: 200px;    
+   }
+
+   .maior:hover .hb {
+        opacity: 1;
+        transition-delay: 0.3s;
+   }
+
+   .hb :hover,
+   .confirab :hover{
+    padding: 2px;
+   }
+
+   .ofertas h3,
+   .confira h3,
+   .compre h3 {
+    text-align: center;
+    font-size: 36px;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+
+   .grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+
+   }
+
+   .fritadeira,
+   .camera,
+   .note,
+   .cg,
+   .meia,
+   .fe,
+   .te,
+   .cell,
+   .te2,
+   .cal {
+    border: 1.8px solid black;
+    border-radius: 20px 0px 20px 0px;
+    padding: 10px;
+    cursor: pointer;
+   }
+
+   .vc {
+    color: rgb(86, 231, 86);
+   }
+
+    .ve {
+    color: rgb(8, 178, 99);
+    }
+
+    .cinza {
+        color: gray;
+    }
+
+    .f,
+    .c,
+    .n,
+    .ca,
+    .m {
+        padding-bottom: 10px;
+    }
+
+    .preto {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .confirab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    }
+    
+    .grid2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .fe img,
+    .te img,
+    .te2 img,
+    .cal img,
+    .cell img {
+        width: 124px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .fe img:hover,
+    .te img:hover,
+    .te2 img:hover,
+    .cal img:hover,
+    .cell img:hover,
+    .fritadeira img:hover,
+    .camera img:hover,
+    .note img:hover,
+    .cg img:hover,
+    .meia img:hover {
+        padding: 5px;
+    }
+
+    .fritadeira img,
+    .camera img,
+    .note img,
+    .cg img,
+    .meia img {
+        width: 95%;
+        width: 130px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .button-borders2 {
+        padding-top: 30px;
+        display: block;
+        margin: 0px auto;
+        /* nova forma de centralizar */
+        padding-bottom: 30px;
+    }
+
+    .footer {
+       background-color: var(--cor-header);
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       font-size: 16px;
+       text-align: baseline;
+    }
+    
+    .direita {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding: 30px;
+    }
+
+    .pc {
+        padding: 10px;
+    }
+
+    .esquerda {
+        background-image: url(../img/rodape.png);
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: left;
+        padding: 25px;
+        padding-right: 20px;
+    }
+
+    /* ---------------------------Cadastro-------------------------------------------------*/
+
+    #background{
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(255,241,89,1) 100%);
+        min-height: 100vh;
+        width: 100%;
+    }
+    
+    .topo2 {
+        background-color: var(--cor-header);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo2 {
+        width: 100%;
+        height: 25vh;
+        margin-left: 32px;
+    }
+
+    .button-borders{
+        margin-right: 32px;
+    }
+
+    
+    main #registre-se h1{
+        text-align: center;
+        color:#3d4fd7;
+        font-size: 36px;
+    }
+
+    main #registro-registrar{
+        text-align: center;
+        padding: 10px;
+    }
+
+    main #registro{
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #caixa {
+        margin: 77px;
+        display: block;
+        padding: 20px;
+        border: 20px;
+        border: 3px solid #3d4fd7 ;
+        border-radius: 40px;
+        width: 300px;
+        margin-bottom: 70px;
+        min-height: 75vh;
+        background-color: white;
+    }
+
+    main #caixa2 {
+        margin: 77px;
+        display: block;
+        padding: 20px;
+        border: 20px;
+        border: 3px solid #3d4fd7;
+        border-radius: 40px;
+        width: 300px;
+        margin-bottom: 50px;
+        min-height: 60vh;
+        background-color: white;
+    }
+
+
+    main #registro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main #registro #registro-registrar  form input{
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+
+    main .form-formulario-nome,.form-formulario-email,
+    .form-formulario-usuario,.form-formulario-senha,.form-formulario-confirmar{
+    color: #3d4fd7 ;
+    text-align: left;
+    margin-top: 5px;
+    }
+
+    main #registro #registro-registrar .container{
+        margin-top: 15px;
+    } 
+
+   
+    .button-borders {
+        padding-top: 10px ;
+        padding-bottom: 5px;
+    }
+
+    .input-wrapper input {
+        background-color: #eee;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 13em;
+        border-radius: 1rem;
+        color: #3d4fd7 ;
+        box-shadow: 0 0.4rem #dfd9d9;
+        cursor: pointer;
+      }
+      
+      .input-wrapper input:focus {
+        outline-color: #3d4fd7;
+      }
+
+
+      .check {
+        cursor: pointer;
+        position: relative;
+        margin: auto;
+        width: 18px;
+        height: 18px;
+        -webkit-tap-highlight-color: transparent;
+        transform: translate3d(0, 0, 0);
+      }
+      
+      .check:before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: rgba(34,50,84,0.03);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        padding-bottom: 10px;
+      }
+      
+      .check svg {
+        position: relative;
+        z-index: 1;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #c8ccd4;
+        stroke-width: 1.5;
+        transform: translate3d(0, 0, 0);
+        transition: all 0.2s ease;
+      }
+      
+      .check svg path {
+        stroke-dasharray: 60;
+        stroke-dashoffset: 0;
+      }
+      
+      .check svg polyline {
+        stroke-dasharray: 22;
+        stroke-dashoffset: 66;
+      }
+      
+      .check:hover:before {
+        opacity: 1;
+      }
+      
+      .check:hover svg {
+        stroke: #3d4fd7;
+      }
+      
+      #cbx:checked + .check svg {
+        stroke: #3d4fd7;
+      }
+      
+      #cbx:checked + .check svg path {
+        stroke-dashoffset: 60;
+        transition: all 0.3s linear;
+      }
+      
+      #cbx:checked + .check svg polyline {
+        stroke-dashoffset: 42;
+        transition: all 0.2s linear;
+        transition-delay: 0.15s;
+      }
+      
+      /* ----------------------------------carrinho----------------------------------------- */
+
+      #cima {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       
+       .apresenta{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+       }
+       
+       .icon-carrinho{
+        width: 100px;
+        height: 100px;
+        padding-left: 20px;
+        padding-top: 20px;
+       }
+       
+       h1 {
+        color: #db2d2d;
+        font-size: 45px;
+        padding-left: 10px;
+        padding-top: 20px;
+       }
+       
+       .esvaziar {
+        margin-right: 100px;
+        padding-top: 35px;
+       }
+       
+       .esvaziar-botao {
+        background-color: #db2d2d;
+        color: white;
+        border-radius: 50px;
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+       }
+       
+       #tabela {
+        padding-top: 35px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+       
+       }
+       
+       table {
+        border-color: #db2d2d;
+        color: #db2d2d;
+       }
+       
+       .azul {
+        font-size: 50px;
+        padding: 30px;
+       }
+       
+       .preto {
+        color: black;
+        font-size: 50px;
+        padding: 30px;
+        
+       }
+       
+       .tabela-botao {
+        background-color: #db2d2d;
+        color: white;
+        border-radius: 50px;
+        padding: 20px;
+        font-size: 25px;
+        border: none;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 20px;
+       }
+       
+       #cupons-pagamento {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        min-height: 30vh;
+        gap: 35px;
+        
+       }
+       
+       .cupons {
+        border: 5px solid #db2d2d;
+        border-radius: 30px;
+        margin-left: 50px;
+        padding: 20px;
+        background-color: white;
+       }
+       
+       #cupons-pagamento .cupons h2 {
+        font-size: 35px;
+        padding-left: 5px;
+        color: #db2d2d;
+        
+        
+       }
+       
+       .cupons-texto {
+        height: 20px;
+        width: 100%;
+        margin-top: 15px;
+        font-size: 15px;
+       }
+       
+       .cupons-botao {
+        float: right;
+        margin-top: 13px;
+        background-color: #db2d2d;
+        color: white;
+        cursor: pointer;
+        border-radius: 30px;
+        border: none;
+        padding: 10px;
+        font-size: 15px;
+        width: 20%;
+        
+       }
+       
+       
+       .pagamento {
+        border: 5px solid #db2d2d;
+        border-radius: 30px;
+        margin-right: 50px;
+        padding: 20px;
+        background-color: white;
+        
+       }
+       
+       .pagamento h2 {
+        font-size: 35px;
+        padding-left: 5px;
+        color: #db2d2d;
+        padding-bottom: 15px;
+       }
+       
+       .container {
+        text-align: center;
+        font-size: 20px;
+        display: inline;
+        justify-content: space-between;
+       
+       }
+       
+       .CD {
+        float: right;
+       }
+       
+       .BB {
+        float: right;
+       }
+       
+       
+       .grid-itens {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       }
+       
+       .grid-itens .grid-row {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+       }
+       
+       #baixo {
+        padding-top: 50px ;
+        padding-bottom: 20px;
+       }
+       
+       .baixo-botao {
+        background-color: #db2d2d;
+        color: white;
+        border-radius: 50px;
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+        border: 5px solid white;
+        cursor: pointer;
+        margin-left: 100px;
+       }
+       
+       .container1 input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        }
+        
+        .container1 {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 20px;
+        user-select: none;
+        }
+        
+        /* Create a custom checkbox */
+        .checkmark {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 1.3em;
+        width: 1.3em;
+        background: #606062;
+        border-radius: 7px;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.30), 0px 1px 1px rgba(0,5);
+        }
+        
+    
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+        }
+        
+        /* Show the checkmark when checked */
+        .container1 input:checked ~ .checkmark:after {
+        display: block;
+        }
+        
+        /* Style the checkmark/indicator */
+        .container1 .checkmark:after {
+        left: 0.45em;
+        top: 0.20em;
+        width: 0.24em;
+        height: 0.6em;
+        border: solid white;
+        border-width: 0 0.15em 0.15em 0;
+        transform: rotate(45deg);
+        }
+       
+       .Pix, .BB, .CD, .CC{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       }
+
+       /* -----------------------------------produto individual--------------------------------- */
+
+       .descri{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 70px;
+        gap: 70px;
+        font-size: 20px;
+    }
+    .frit img{
+        width: 400px;
+    }
+     main .button-compra{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        align-items: center;
+     }
+
+     /* --------------------------------------Dashboard------------------------------------------- */
+     
+     .tela {
+        display: grid;
+        grid-template-columns: 2fr 12fr;
+        background-color: #F5F5F5;
+        width: 100%;
+    
+    }
+    
+    .e {
+        background-color: #A0C6EA;
+        color: white;
+    }
+    
+    .logozinha {
+        padding: 10px;
+    }
+    
+    .ecc,
+    .branco{
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    
+    .logod{
+        height: 40px;
+        width: 160px;
+    }
+
+
+    .md {
+        gap: 30px;
+    }
+        
+    
+    header, footer {
+        background-color: #fff;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    header a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    header button{
+        cursor: pointer;
+        color: 
+        #009EF7;
+        background-color: 
+        #F4F6FA;
+        padding: 10px;
+        border: 2px solid black;
+    }
+    
+    header a:hover{
+        padding: 4px;
+    }
+    
+    footer p {
+        color: #3F4254;
+    }
+    
+    .group {
+        display: flex;
+        line-height: 28px;
+        align-items: center;
+        position: relative;
+        max-width: 190px;
+       }
+       
+       .input {
+        width: 100%;
+        height: 40px;
+        line-height: 28px;
+        padding: 0 1rem;
+        padding-left: 2.5rem;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        outline: none;
+        background-color: #f5f5f5 ;
+        color: #0d0c22;
+        transition: .3s ease;
+       }
+       
+       .input::placeholder {
+        color: #9e9ea7;
+       }
+       
+       .input:focus, input:hover {
+        outline: none;
+        border-color: black;
+        background-color: #fff;
+        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+       }
+       
+       .icon {
+        position: absolute;
+        left: 1rem;
+        fill: #9e9ea7;
+        width: 1rem;
+        height: 1rem;
+       }
+    
+       .cinza {
+         color: #5E6278
+       }
+    
+       .md {
+        padding-left: 10px;
+        padding-right: 10px;
+       }
+    
+       .ecomerce {
+        padding-top: 20px;
+        padding-bottom: 20px;
+       }
+    
+       .ecomerc {
+        font-size: 36px;
+        color: black;
+       }
+    
+       #Home {
+        font-size: 25px;
+       }
+    
+       .dc {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+       }
+    
+       .e2, .d2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+       }
+    
+       .dm {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+        width: 100%;
+        height: 600px;
+       } 
+
+       .bm,
+       .grid6 {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 30px;
+       }
+
+       .ce {
+        font-size: 36px;
+        padding: 20px;
+       }
+
+       .naec {
+        font-size: 36px;
+        padding: 20px;
+        text-align: center;
+       }
+
+       .griddm {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+       }
+
+       .dmc {
+        border: 2px solid black;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 20px;
+        
+       }
+       
+       .db {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+       }
+
+       .branco {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+       }
+
+       .branco:hover{
+        padding: 4px;
+       }
+
+       .imagenzinha {
+        height: 30px;
+       }
+
+       .grid1 {
+        border: 2px solid black;
+        border-radius: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3px;
+        align-items: center;
+        cursor: pointer;
+       }
+
+       .grid1:hover {
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 21%, rgba(177,227,255,1) 100%);
+        padding: 4px;
+       }
+
+       .ee {
+        font-size: 16px;
+       }
+
+       .imgd {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+       }
+
+       .imgd:hover {
+        padding: 5px;
+       }
+       
+       .sp{
+        font-size: 32px;
+       }
+
+       #sp1 {
+        color: #0c6da5;
+       }
+
+       .ge p {
+        font-size: 16px;
+       }
+
+       .dmc:hover {
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 21%, rgba(177,227,255,1) 100%);
+        padding: 4px;
+       }
+
+       .tabled {
+        border-color: black;
+        width: 100%;
+       }
+
+       .tabled1 {
+        text-align: center ;
+        padding-left: 10px;
+        padding-right: 10px;
+       }
+
+       .griddm {
+        padding-bottom: 10px;
+       }
+
+     .centralizar {
+        text-align: center;
+        font-size: 20px;
+     }
+
+     .pret {
+        font-size: 28px;
+        color: black;
+     }
+       
+    .ecomerced {
+        height: 150px;
+        width: 200px;
+        cursor: pointer;
+    }
+
+    .celularzinho {
+        height: 150px;
+        width: 200px;
+        cursor: pointer;
+    }
+
+    .ecomerced:hover,
+    .celularzinho:hover {
+        padding: 4px;
+    }
+
+    .img2 {
+        text-align: center;
+
+    }
+
+    .btnsd {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .btn1d {
+        border-radius: 20px;
+        background-color: #009EF7;
+        color: white;
+        border: none;
+        font-size: 20px;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .btn2d {
+        border-radius: 20px;
+        background-color: 
+        #F5F5F5;
+        color: gray ;
+        border: none;
+        font-size: 20px;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .btn1d:hover,
+    .btn2d:hover {
+        padding: 5px;
+    }
+       
